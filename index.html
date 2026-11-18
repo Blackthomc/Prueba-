@@ -1,3 +1,4 @@
+
 <!-- =====================================================================
   COMMIT 1 feat: base del proyecto - Google Fonts - paleta cálida - logo architecture.
 ===================================================================== -->
@@ -50,24 +51,40 @@
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
-<body class="bg-crema font-sans text-noche antialiased">
 
-  <!-- Menú: rail lateral en móvil, barra superior en desktop -->
+<body class="bg-crema font-sans text-noche antialiased">
   <header class="fixed inset-y-0 left-0 z-50 w-[76px] bg-noche text-lino md:sticky md:bottom-auto md:top-0 md:w-auto md:border-b md:border-crema-line md:bg-white/95 md:text-taupe md:backdrop-blur">
     <nav class="flex h-full flex-col items-center gap-1 py-4 md:mx-auto md:h-auto md:max-w-6xl md:flex-row md:justify-between md:px-6 md:py-3" aria-label="Principal">
+
       <a href="#inicio" class="mb-3 flex flex-col items-center gap-1 text-center font-serif text-xs font-bold leading-tight text-white md:mb-0 md:flex-row md:gap-2 md:text-left md:text-lg md:text-noche">
-        <span class="grid h-9 w-9 place-items-center rounded-lg bg-kora text-white"><span class="material-symbols-outlined icon-md" aria-hidden="true">architecture</span></span>
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-kora text-white">
+          <span class="material-symbols-outlined icon-md" aria-hidden="true">architecture</span>
+        </span>
         <span>Kora<br class="md:hidden" /> Estudio</span>
       </a>
-<!-- ===== FIN COMMIT 1 ===== -->
- <!-- =====================================================================
+<!-- =====================================================================
   COMMIT 2 · feat: navbar, enlace Inicio (home)
 ===================================================================== -->
       <ul class="flex flex-col items-center gap-1 md:flex-row">
-        <li><a href="#inicio" aria-current="page" class="flex w-16 flex-col items-center gap-1 rounded-lg py-2 text-[10px] font-medium transition md:w-auto md:flex-row md:gap-2 md:px-3 md:text-sm bg-kora text-white md:bg-kora-soft md:text-kora"><span class="material-symbols-outlined icon-sm" aria-hidden="true">home</span>Inicio</a></li>
-<!-- ===== FIN COMMIT 2 ===== -->
+        <li>
+          <a href="#inicio" aria-current="page"
+             class="flex w-16 flex-col items-center gap-1 rounded-lg py-2 text-[10px] font-medium transition md:w-auto md:flex-row md:gap-2 md:px-3 md:text-sm bg-kora text-white md:bg-kora-soft md:text-kora">
+            <span class="material-symbols-outlined icon-sm" aria-hidden="true">home</span>
+            Inicio
+          </a>
+        </li>
+<!-- =====================================================================
+  COMMIT 3 · feat: navbar, enlace Espacios (space_dashboard)
+===================================================================== -->
+        <li>
+          <a href="#espacios"
+             class="flex w-16 flex-col items-center gap-1 rounded-lg py-2 text-[10px] font-medium transition md:w-auto md:flex-row md:gap-2 md:px-3 md:text-sm hover:bg-white/10 md:hover:bg-transparent md:hover:text-kora">
+            <span class="material-symbols-outlined icon-sm" aria-hidden="true">space_dashboard</span>
+            Espacios
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 </body>
 </html>
-
